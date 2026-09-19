@@ -54,7 +54,7 @@
      SELECT AVG(total_spend)
        FROM customer_totals);
 ## (c) Window-function queries
-   ###(1) Rank customers by total amount spent, highest first. also shown in customer's ranking.png
+   ### (1) Rank customers by total amount spent, highest first. also shown in customer's ranking.png
    WITH customer_totals AS (
     SELECT
         c.customer_id,
@@ -77,7 +77,7 @@ SELECT
     total_spent,
     RANK() OVER (ORDER BY total_spent DESC) AS spending_rank
 FROM customer_totals;
-###(2) Number each customer's orders in the order placed. also shown in customer's orders.png
+### (2) Number each customer's orders in the order placed. also shown in customer's orders.png
 SELECT
     c.customer_name,
     o.order_id,
@@ -89,7 +89,7 @@ SELECT
 FROM orders o
 JOIN customers c
     ON o.customer_id = c.customer_id;
-###(3)Show a running total of revenue over time, ordered by order date. also shown in running total of revenue.png
+### (3)Show a running total of revenue over time, ordered by order date. also shown in running total of revenue.png
 WITH order_revenue AS (
     SELECT
         o.order_id,
@@ -113,7 +113,7 @@ SELECT
     ) AS running_total
 FROM order_revenue
 ORDER BY order_date, order_id;
-###(4) For each customer with more than one order, show days between the current and previous order. also shown in more than two orders customers.png.
+### (4) For each customer with more than one order, show days between the current and previous order. also shown in more than two orders customers.png.
 WITH customer_orders AS (
     SELECT
         c.customer_id,
