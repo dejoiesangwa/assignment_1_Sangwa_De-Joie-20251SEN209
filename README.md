@@ -1,7 +1,14 @@
 # assignment_1_Sangwa_De-Joie-20251SEN209
-## created tables -> tables_creation
-## inserted data in customers -> customers_data
-## inserted data in products -> products_data
-## inserted data in customers -> customers_data
-## inserted data in orders -> orders_data
-## inserted data in order_items -> data_items_data
+
+# names:Sangwa De Joie
+# id :20251SEN209
+# group: c
+## created tables -> tables_creation.png
+## inserted data in customers -> customers_data.png
+## inserted data in products -> products_data.png
+## inserted data in customers -> customers_data.png
+## inserted data in orders -> orders_data.png
+## inserted data in order_items -> order_items_data.png
+
+
+## A) JOIN QUERIES
